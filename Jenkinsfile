@@ -7,6 +7,7 @@ pipeline {
   }
   environment {
     DEPLOY_NAMESPACE = "jx-staging"
+    CHART_REPOSITORY = "http://fr1cslfcglo0082.misys.global.ad"
   }
   stages {
     stage('Validate Environment') {
