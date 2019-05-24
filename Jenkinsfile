@@ -14,6 +14,7 @@ pipeline {
       steps {
         container('maven') {
           dir('env') {
+	    sh "echo Hi"
             sh 'jx step helm build'
           }
         }
